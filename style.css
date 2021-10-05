@@ -1,0 +1,42 @@
+
+.bodyx{
+  background-image: url(../images/Back.png);
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-position: top;
+  background-color: rgb(12, 3, 20);
+    text-align: center;
+  }
+.back {
+}
+.numbercent{
+    
+}
+.gardone {
+  
+  width: 100%;
+  height: auto;
+  top: 20px;
+ 
+}
+.botton{
+  width: 50%;
+  height: 40px;
+  border-radius: 30px;
+  color: blueviolet;
+}
+.text1{
+
+  width: 100%;
+  height: auto;
+  top: 350px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+.boxnumber{
+  position: relative;
+  width: 300px;
+  height: auto;
+    font-size: 15px;
+
+}
