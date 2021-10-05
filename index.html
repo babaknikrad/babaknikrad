@@ -1,0 +1,148 @@
+<!DOCTYPE html><html>
+    <head>
+        <link href="./css/main.css" rel="stylesheet">
+        <link href="./css/animate.min.css" rel="stylesheet">
+        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    </head>
+    <body class="bodyx">
+    
+        <dive class="back"></dive>
+    <div class="gardone" ><img src="./images/Gardone.png"></div>
+     <div class="text1" id="pax"><h1>Press enter to continue</h1></div>   
+    <div class="numbercent"> 
+        <form>
+            <input class="boxnumber" id="textbox" type="tel" placeholder="enter your number"><br>
+           <input type="button" width="200px" placeholder="Enter" class="button">
+        </form>
+    </div>
+ 
+    <!-- <script>
+    
+        document.getElementById("pax").style.color = "green";
+    </script>
+   <script> -->
+    //   let name ="babak"
+    //   const age = 16
+       
+     //  console.log(name)
+    //   console.log(age)
+//عملگرها ------------------------
+   //    let number = 4+1
+       //number=number+5
+       //console.log(number)
+//or -----------------
+   //    let number2 = 5
+       //number2+=30
+   //    if(number==number2){         
+    //          console.log(number2)}
+    // Math Object -----------------
+//       let number = Math.random() * 1000
+//       number = Math.round(number)
+//       console.log(number) 
+//       let ali = Math.max(20,30,12,34,56,43)
+//       console.log(ali)
+// //    </script>
+//    <!-- <script>
+//        //استخراج متن خاصی از رشته
+// const str1="hello Milad"
+// const name = str1.substring(6,11)
+// const yourname = `Your Name Is ${name}`
+// console.log(yourname)
+
+//    </script> -->
+//    <!-- array -->
+//   <script>
+//        const names =[["babak","hamed"],["reza","hamid"]];
+//       const box1 = names[0];
+//       const box2=names[1];
+//       const box3= [...box1,...box2,14,"mosi"];
+//                    const box4= `hi ${box3[1]}`;
+//                    console.log(box4)
+//    </script> -->
+//    <!-- Objects -->
+// <script>
+// const data={
+// id:"345",
+// name:"babak",
+// username:"bret",
+// email:"babaknikrad@gmail.com",
+// adres:{
+//     strix:"valiasr",
+//     ave:"432",
+//     sql:"654",
+//     postalcode:{
+//         a:"1378123456",
+//         b:"432637524",
+// }
+// }
+//        }
+       
+    //    const data1=data.name;
+    //    const data2=data.adres.street;
+    //    const data3=data.adres.postalcode.a;
+    //    const print=`hi ${data1} you are ${data2} postalcode: ${data3}?`
+    //    console.log(print)
+//  خلاصه کد بالا
+//     const {id,name, username,email,adres:{strix,ave,sql,postalcode:{a,b}}} = data;
+    
+//            console.log(`hi ${name} welcome to ${ave} ${a}`);
+//    </script>
+   <!-- Game -->
+   <!-- <script> -->
+<!-- const choice = ["sang","kaghaz","gheichi"];
+// user
+const userchoice = prompt("selector: sang kaghaz gheichi");
+if(userchoice){console.log(`your choice is ${userchoice}`)}
+else{alert("چرا هیجی انتخاب نکردی لاشی؟")}
+// Computer
+const randomnumber = Math.floor(Math.random() * 3);
+const computerchoics = choice[randomnumber]
+console.log(`choice computer is ${computerchoics}`)
+if(computerchoics==userchoice){alert("انتخاب شما و کامیوتر شبیه به هم بود")}
+else if(computerchoics==="gheichi" && userchoice==="sang"){ alert("شما برنده شدید ،واستون ریدم بفرمایید")}
+else if(computerchoics==="sang" && userchoice==="kaghaz"){ alert("شما برنده شدید ،واستون ریدم بفرمایید")}
+else if(computerchoics==="kaghaz" && userchoice==="gheichi"){ alert("شما برنده شدید ،واستون ریدم بفرمایید")}
+else if(computerchoics==="kaghaz" && userchoice==="sang"){ alert("شماباختید ،واستون متاسفم")}
+else if(computerchoics==="sang" && userchoice==="gheichi"){ alert("شماباختید ،واستون متاسفم")}
+else {alert("شماباختید ،واستون متاسفم")} -->
+<!-- </script> -->
+<!-- Search -->
+<!-- <script>
+const data =["hamid-9912878765" ,"babak-987652436" ,"hamed-129384765" ,"reza-2356786765"];
+const search = prompt("دنبال چه کسی میگردید؟");
+for (i=0; i<data.length; i++){
+    let spliteddata=data[i].split("-");
+    if (spliteddata[0]=== search) {
+        alert(`number of ${spliteddata[0]} is ${spliteddata[1]}`);
+        break;
+    } else{
+        console.log("نگرد نیست")
+    }
+}
+
+</script> -->
+<!-- برنامه کارنامه -->
+<script>
+  const marks=[10,12,17,20,12,20,18];   ///ورودی ها را داخل مارک ریخت
+    function avrege(numbers){       /////یک فانکشن تعریف کردیم
+        let sum = 0;   ////یک متغیر تعریف کردیم
+        for (let i=0; i<numbers.length;i++){    ///    آی را برابر 0 قرار دادیم وتا زمانی که طول اعداد برابر با آی نبود به آی یک عدد اضافه کنیم
+            sum= sum+marks[i];    ///سام را با ایندکس مارک(آی)  جمعزدیم و دوباره داخل سام ریختیم
+        }
+        let av=sum/marks.length;
+        let rond = av.toFixed(2)
+        console.log(rond)
+        if (rond > 10){
+            alert("قبول شدی")
+        }
+        else {
+            alert("ریدی")
+        }
+    }
+    avrege(marks)
+</script>
+</body>
+
+</html>
